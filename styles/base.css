@@ -1,0 +1,114 @@
+body {
+    font-family: Cambria, Cochin, Georgia, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+header {
+    width: 1200%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #047cfc;
+    border-bottom: 1px solid #dee2de;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    gap: 70px;
+    margin-top: 15px;
+    text-align: center;
+    background-color: black;
+}
+
+header nav a {
+    text-decoration: darkblue;
+    color: #dee2de;
+    padding: 5px;
+    gap: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+header nav a:hover {
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+.comtent-nav {
+    display: inline-block;
+    margin: 0 10px;     /* adjust space between links */
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #560fda;
+}
+
+nav ul li a:hover {
+    color: #047cfc;
+}
+
+/* center the main content */
+main {       
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+section h2 {
+    text-align: center;
+    background-color: bisque;
+}
+
+/* card styling */
+.card {
+    border: 1px solid #dee2de;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+
+/* style the image */
+.comtent img {
+    margin-right: 15px ;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #f8f;
+    border-top: 2px solid #047cfc;
+
+}
+
+footer p {
+    margin: 5px 0;
+}
