@@ -49,9 +49,16 @@ header h1 {
     text-align: center;
 }
 
+.highlight {
+    color: #8f4b3c;
+}
+
 .comtent-nav {
-    display: inline-block;
-    margin: 0 10px;     /* adjust space between links */
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 15px;
+    background-color: black;
 }
 
 
