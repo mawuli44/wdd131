@@ -1,5 +1,6 @@
 body {
-    font-family: Cambria, Cochin, Georgia, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,7 +16,7 @@ header {
     width: 1200%;
     box-sizing: border-box;
     padding: 10px;
-    background-color: #047cfc;
+    background-color: #542c9e;
     border-bottom: 1px solid #dee2de;
     text-align: center;
 }
@@ -43,14 +44,16 @@ header nav a:hover {
 }
 
 header h1 {
+    font-weight: 100;
     margin: 0;
     padding: 0;
     font-size: 25px;
     text-align: center;
+    
 }
 
 .highlight {
-    color: #8f4b3c;
+    color: #eb3b0f;
 }
 
 .comtent-nav {
