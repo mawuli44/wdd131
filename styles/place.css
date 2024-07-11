@@ -1,0 +1,89 @@
+:root {
+    --primary-font: 'Roboto', sans-serif;
+    --primary-color: #333;
+    --background-color: #f8f8f8;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.icon-small {
+    display: inline-block;
+}
+
+.icon-img {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-color: yellow;
+    color: yellowgreen;
+    padding: 2px;
+}
+
+header h1 {
+    background-color: var(--green);
+    padding: 2rem;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+picture img {
+    border-bottom: .4rem solid var(--green);
+    width: 100%;
+    height: auto;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero picture {
+    width: 100%;
+}
+
+.data, .weather {
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    background: #ffffffcc; 
+    padding: 1rem;
+    width: 30%;
+}
+
+.data {
+    left: 1%;
+}
+
+.weather {
+    right: 1%;
+}
+
+section h2:nth-child(1) {
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+section p {
+    text-align: center;
+    padding: .4rem;
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: greenyellow;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
