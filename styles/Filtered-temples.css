@@ -127,7 +127,7 @@ main-container {
 }
 
 .navigation a:hover {
-    font-weight: 700;
+    font-weight: 400;
     text-decoration: underline;
 }
 
@@ -158,12 +158,12 @@ main-container {
 }
 
 .album-content {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .image-grid figcaption {
     padding: 0;
-    padding-top: 2px;
+    padding-top: 10px;
     text-align: center;
 }
 
@@ -282,7 +282,7 @@ footer {
 
     .image-grid figure {
         margin: 0;
-        padding: 10px;
+        padding: 20px;
     }
 
     .image-grid img {
@@ -302,8 +302,8 @@ footer {
         font-size: 1.6rem;
         text-align: center;
         margin: 1rem;
-        padding-top: 10px;
-        font-weight: 700;
+        padding-top: 5px;
+        font-weight: 400;
     }
 
     h2 {
@@ -352,7 +352,7 @@ footer {
 
     .image-grid figcaption {
         padding: 0;
-        padding-top: 5px;
+        padding-top: 2px;
         text-align: center;
     }
 }
