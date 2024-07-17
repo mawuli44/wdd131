@@ -133,11 +133,32 @@ smallLink.addEventListener("click", () => {
   createTempleCard(temples.filter(temple => (temple.area) < ("10000")));
 });
 
+
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const lastModifiedSpan = document.getElementById('lastModifiedDate');
+    const currentDate = new Date();
+    const formattedDate = currentDate.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+    });
+    lastModifiedSpan.textContent = formattedDate;
+});
+  
 function createTempleCard(filteredTemples) {
-  document.querySelector(".temple-card").innerHTML = "";
+  const templeCardContainer = document.querySelector(".temple-card");
+  templeCardContainer.classList.add('temple-card-container');
+  templeCardContainer.innerHTML = ""; // Clear existing content
+
   filteredTemples.forEach(temple => {
     let card = document.createElement("section");
-    card.classList.add(`temple-card-${1}`);
+    card.classList.add('temple-card');
+    
     let templeName = document.createElement("h3");
     let location = document.createElement("p");
     let dedicated = document.createElement("p");
@@ -159,8 +180,6 @@ function createTempleCard(filteredTemples) {
     card.appendChild(area);
     card.appendChild(img);
     
-    document.querySelector(".temple-card").appendChild(card);
+    templeCardContainer.appendChild(card);
   });
-  }
-
-  
+}
