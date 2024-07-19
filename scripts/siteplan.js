@@ -1,4 +1,4 @@
-ocument.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     const lastModifiedSpan = document.getElementById('lastModifiedDate');
     const currentDate = new Date();
     const formattedDate = currentDate.toLocaleDateString('en-US', {
@@ -10,4 +10,7 @@ ocument.addEventListener("DOMContentLoaded", () => {
         second: '2-digit'
     });
     lastModifiedSpan.textContent = formattedDate;
+
+    const currentYearSpan = document.getElementById('currentyear');
+    currentYearSpan.textContent = new Date().getFullYear();
 });
