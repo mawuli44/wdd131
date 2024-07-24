@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayisek Store - Contact</title>
+    <link rel="stylesheet" href="styles/store.css">
+    <script src="scripts/store.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="store.html">Ayisek Store</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    &#9776;
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="store.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="store-review.html">Review</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+
+        <!-- Contact Information -->
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: support@ayisekstore.com</p>
+            <p>Phone: +123-456-7890</p>
+            <p>Address: 123 Ayisek Street, Accra, Ghana</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ayisek Store</p>
+        <p>&copy; 2024<span id="currentyear"></span> 🌳 Mawuli Ayikpa 🌳 Accra, Ghana</p>
+        <div class="footer-links">
+            <a href="store.html">Home</a> |
+            <a href="product.html">Products</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="attributions.html">Attributions</a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/ayisekstore" target="_blank" class="social-icon"><img src="images/face.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com/ayisekstore" target="_blank" class="social-icon"><img src="images/x-.jpg" alt="x"></a>
+            <a href="https://www.instagram.com/ayisekstore" target="_blank" class="social-icon"><img src="images/insta.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/ayikpa-mawuli-1b41b4263/" target="_blank" class="social-icon"><img src="images/in.png" alt="LinkedIn"></a>
+        </div>
+        <p>Last Modification: <span id="lastModifiedDate"></span></p>
+    </footer>
+</body>
+</html>
